@@ -1,0 +1,30 @@
+{
+  "include": ["**/*.ts"],
+  "compilerOptions": {
+    // Type checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Modules
+    "module": "nodenext",
+    "rewriteRelativeImportExtensions": true,
+
+    // JavaScript support
+    "checkJs": true,
+
+    // Interop Constraints
+    "verbatimModuleSyntax": true,
+
+    // Language and Environment
+    "lib": ["ESNext"],
+
+    // Completeness
+    "skipLibCheck": true
+  }
+}
