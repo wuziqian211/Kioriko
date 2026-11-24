@@ -9,22 +9,22 @@ importers:
   .:
     dependencies:
       color-diff:
-        specifier: latest
+        specifier: ^1.4.0
         version: 1.4.0
       image-size:
-        specifier: latest
+        specifier: ^2.1.0
         version: 2.1.0
       is-wsl:
-        specifier: latest
+        specifier: ^3.1.1
         version: 3.1.1
       md5:
-        specifier: latest
+        specifier: ^2.3.0
         version: 2.3.0
       node-notifier:
-        specifier: latest
+        specifier: ^12.1.0
         version: 12.1.0
       openai:
-        specifier: latest
+        specifier: ^7.62.0
         version: 7.62.0
     devDependencies:
       '@eslint/js':

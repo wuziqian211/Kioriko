@@ -10,13 +10,11 @@
 
 **环境**：Node.js 24 及以上。代码用到了 `Promise.withResolvers`、`Object.groupBy`、`JSON.rawJSON`、`util.styleText` 等较新的 API。
 
-**依赖**：`package.json` 沿用了原部署环境的依赖列表。运行时依赖是 md5、color-diff、image-size、is-wsl、node-notifier、openai；开发依赖是 ESLint 相关的包。在本目录下安装：
+**依赖**：运行时依赖是 md5、color-diff、image-size、is-wsl、node-notifier、openai；开发依赖是 ESLint 相关的包。在本目录下安装：
 
 ```sh
-npm install
+pnpm install
 ```
-
-版本都写的是 `latest`，与原来一致。这意味着每次重新安装都可能装到新的大版本；如果某个包升级后改变了导出方式（例如 image-size），启动时就会报错。需要固定版本时，把 `latest` 改成具体的版本号即可。
 
 **配置**：
 
@@ -325,8 +323,6 @@ node scripts/like.js
 ```
 
 `node --check` 只能发现语法错误，发现不了 “忘记 import”。拆分时额外用 ESLint 的 `no-undef`（使用了未定义的变量）和 `no-unused-vars`（有多余的 import）检查过，结果为 0 个问题。以后改动较多时，建议也这样检查。
-
-`package.json` 里已经有 ESLint 相关的开发依赖，但本目录还没有 `eslint.config.js`。把原来使用的 ESLint 配置放进来后，就可以运行 `npx eslint .`。
 
 ---
 

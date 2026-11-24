@@ -12,12 +12,12 @@
     "node": ">=24.0.0"
   },
   "dependencies": {
-    "color-diff": "latest",
-    "image-size": "latest",
-    "is-wsl": "latest",
-    "md5": "latest",
-    "node-notifier": "latest",
-    "openai": "latest"
+    "color-diff": "^1.4.0",
+    "image-size": "^2.1.0",
+    "is-wsl": "^3.1.1",
+    "md5": "^2.3.0",
+    "node-notifier": "^12.1.0",
+    "openai": "^7.62.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
